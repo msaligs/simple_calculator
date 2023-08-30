@@ -1,0 +1,136 @@
+<!-- please do like and dont copy -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator </title>
+    <meta name="description" content="a simple calculator" />
+    <meta http-equiv="refresh" content="60" />
+    <meta name="author" content="msaligs@gmail.com" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!--For heading-->
+    <div align="center">
+        <table id="name">
+            <tr>
+                <td colspan="3" class="simple">
+                    Simple Calculator </td>
+
+
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p id="input"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="ans" onclick="set(null)" value="AC">AC
+                    </button></td>
+                <td class="author">Msaligs.Inc</td>
+                <td><button class="ans" onclick="del()" value="del">Del
+                    </button></td>
+
+            </tr>
+        </table>
+        <hr>
+
+
+
+
+        <!--For Symbols-->
+
+        <table id="name">
+            <tr>
+                <td><button class="function" onclick="add('Math.sqrt(')">&radic;
+                    </button>
+                </td>
+                <td><button class="function" onclick="add(Math.PI)">&pi;
+                    </button></td>
+                <td><button class="function" onclick=""></button>
+                </td>
+                <td><button class="function" onclick="add('*')">×</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="function" onclick="add('(')">(
+                    </button></td>
+                <td><button class="function" onclick="add(')')">)
+                    </button> </td>
+                <td> <button class="function" onclick=""></button>
+                </td>
+                <td> <button class="function" onclick="add('/')"> ÷ </button>
+                </td>
+            </tr>
+
+        </table>
+
+
+
+        <!--For keypad-->
+
+
+        <table width="350px">
+
+            <tr>
+                <td><button id="button" onclick="add(1)">1</button>
+                </td>
+                <td><button id="button" onclick="add(2)">2 </button>
+                </td>
+                <td><button id="button" onclick="add(3)">3</button>
+                </td>
+                <td><button class="function" onclick="add('-')">-</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td><button id="button" onclick="add(4)">4 </button>
+                </td>
+                <td><button id="button" onclick="add(5)">5 </button>
+                </td>
+                <td><button id="button" onclick="add(6)">6</button>
+                </td>
+                <td><button class="function" onclick="add('+')">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="button" onclick="add(7)">7</button>
+                </td>
+                <td><button id="button" onclick="add(8)">8</button>
+                </td>
+                <td><button id="button" onclick="add(9)">9</button>
+                </td>
+                <td rowspan="2"><button id="equal" onclick="set(eval(input.innerHTML))">=
+                    </button></td>
+            </tr>
+
+            <tr>
+                <td><button class="function" onclick=""></button>
+                </td>
+
+                <td><button id="button" onclick="add(0)">0</button>
+                </td>
+                <td><button class="function" onclick="add('.')" style="text-align:middle;">.</button>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <div id="like">
+        <div id="dte"></div>
+        <a href="mailto:msaligs@gmail.com">
+            Feedback / Suggestion </a>
+    </div>
+
+
+
+
+</body>

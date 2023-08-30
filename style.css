@@ -1,0 +1,151 @@
+body {
+    background: linear-gradient(40deg, orange, pink, aqua, #bcdaef, SkyBlue, Pink, orange);
+    animation: bg 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+}
+
+#name {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    width: 340px;
+    margin: 2px;
+}
+
+
+
+#dte {
+    font-family: cursive;
+    color: red;
+
+}
+
+.author {
+    Font-family: cursive;
+    color: red;
+}
+
+.ans {
+    width: 75px;
+    height: 40px;
+    background: radial- gradient(#cdeacb, #aaddef, #efcbaa, #ffaacc, #bbdace);
+    border-radius: 40%;
+    display: block;
+    animation: vibrate 1s linear infinite;
+    outline: none;
+}
+
+@keyframes vibrate {
+    20% {
+        transform: translateX(10deg) rotate(20deg);
+    }
+
+    40% {
+        transform: translateX(-10deg) rotate(-20deg);
+    }
+
+    60% {
+        transform: translateX(10deg) rotate(20deg);
+    }
+
+    80% {
+        transform: translateX(-10deg) rotate(-20deg);
+    }
+}
+
+#button {
+    width: 75px;
+    box-shadow: 2px 6px #999;
+    height: 35px;
+    font-size: 20px;
+    background: radial-gradient(#cbaefd, #adefcb, #defcab);
+    border-radius: 30%;
+    outline: none;
+}
+
+
+
+.function {
+    width: 75px;
+    height: 35px;
+    font-size: 26px;
+    margin: 0px;
+    border-radius: 20%;
+    background: linear-gradient(#defcab, #feaceb, #aedfec, #afdcab, #feaceb, #defcab);
+    box-shadow: 3px 5px #999;
+    outline: none;
+
+}
+
+
+
+#equal {
+    width: 78px;
+    height: 78px;
+    font-size: 50px;
+    background-color: yellow;
+    border-radius: 20%;
+    animation: eql 2ms ease-in-out infinite reverse;
+    animation-delay: 2s;
+    outline: none;
+}
+
+
+
+
+
+
+
+#like {
+    background-color: #fccbae;
+    font-size: 20px;
+    Text-align: center;
+    Border: 2px dotted #fccbaa;
+    box-shadow: -4px -7px 4px #fccbea;
+}
+
+
+@keyframes bg {
+    0% {
+        background: radial-gradient(10deg, orange, pink, aqua, #bcdaef, SkyBlue, Pink, orange);
+    }
+
+    35% {
+        background: linear-gradient(-40deg, pink, aqua, orange, #bcdaef, pink);
+    }
+
+    70% {
+        background: linear-gradient(300deg, #bcdaef, pink, aqua, yellow);
+    }
+
+}
+
+@keyframes eql {
+    0% {
+        background: linear-gradient(#ff0099, #ff00ff, #ff33ff, #ff66ff, #ff99ff, #ffccff, #ff6699);
+    }
+
+    20% {
+        background: linear-gradient(30deg, #ff00ff, #ff33ff, #ff66ff, #ff99ff, #ffccff, #ff6699, #ff0099);
+    }
+
+    40% {
+        background: radial-gradient(#ff33ff, #ff66ff, #ff99ff, #ffccff, #ff6699, #ff0099, #ff00ff);
+    }
+
+    60% {
+        background: linear-gradient(-60deg, #ff66ff, #ff99ff, #ffccff, #ff6699, #ff0099, #ff00ff, #ff33ff);
+    }
+
+    80% {
+        background: linear-gradient(#ff99ff, #ffccff, #ff6699, #ff0099, #ff00ff, #ff33ff, #ff66ff);
+    }
+
+    100% {
+        background: linear-gradient(90deg, #ffccff, #ff6699, #ff0099, #ff00ff, #ff33ff, #ff66ff, #ff99ff);
+    }
+}
